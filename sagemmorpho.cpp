@@ -355,6 +355,19 @@ void SagemMorpho::receiveData()
             m_request = MorphoRequest_None;
         }
         break;
+    case MorphoRequest_Identify:
+    case MorphoRequest_Cancel:
+        m_repeat = 1;
+        if(identifier == MorphoRequest_AsyncMessage)
+        {
+            m_response.clear();
+            m_responseExt.clear();
+        }
+        else
+        {
+            m_request = MorphoRequest_None;
+        }
+        break;
     default:
         m_repeat = 1;
         m_request = MorphoRequest_None;
@@ -423,7 +436,13 @@ void SagemMorpho::putData(const QByteArray &data)
             }
         }
         else
-            ui->console->putData(data);
+        {
+            QString sdata(data.data());
+            if(sdata.indexOf("\r\n") > 0)
+                ui->console->putData(data);
+            else
+                ui->console->putDataHex(data);
+        }
     }
 }
 
