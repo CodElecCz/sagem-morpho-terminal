@@ -17,9 +17,9 @@ repo: https://github.com/CodElecCz/sagem-morpho-terminal
 
 The application uses Qt Widgets and Qt Serial Port. Port settings include baud rate, data bits, parity, stop bits, and flow control; available ports can be selected in the settings dialog.
 
-![Sagem Morpho Terminal main window](images/sagem0.png)
-![Reader controls in Sagem Morpho Terminal](images/sagem1.png)
-![Morpho protocol communication tools](images/sagem2.png)
+![Sagem Morpho Terminal main window](./images/sagem0.png)
+![Reader controls in Sagem Morpho Terminal](./images/sagem1.png)
+![Morpho protocol communication tools](./images/sagem2.png)
 
 # Terminal and device commands
 

@@ -17,9 +17,9 @@ repo: https://github.com/CodElecCz/sagem-morpho-terminal
 
 Aplikace používá Qt Widgets a Qt Serial Port. Nastavení portu zahrnuje rychlost, počet datových bitů, paritu, stop bity a řízení toku; dostupné porty lze vybrat přímo v dialogu.
 
-![Hlavní okno aplikace Sagem Morpho Terminal](images/sagem0.png)
-![Ovládací prvky čtečky v aplikaci Sagem Morpho Terminal](images/sagem1.png)
-![Nástroje pro komunikaci s protokolem Morpho](images/sagem2.png)
+![Hlavní okno aplikace Sagem Morpho Terminal](./images/sagem0.png)
+![Ovládací prvky čtečky v aplikaci Sagem Morpho Terminal](./images/sagem1.png)
+![Nástroje pro komunikaci s protokolem Morpho](./images/sagem2.png)
 
 # Terminál a příkazy zařízení
 
