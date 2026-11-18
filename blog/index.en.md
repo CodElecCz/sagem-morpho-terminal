@@ -1,6 +1,6 @@
 ---
 title: "Sagem Morpho Terminal: serial communication with a reader"
-description: "A Qt application for serial communication with Sagem Morpho devices, combining a terminal, device commands, identification, and ILV protocol handling."
+description: "A Qt application with a custom serial prompt, biometric and database operations, and a separate implementation of the Morpho binary protocol."
 date: 2026-11-18
 lang: en
 tags:
@@ -17,15 +17,15 @@ repo: https://github.com/CodElecCz/sagem-morpho-terminal
 
 The application uses Qt Widgets and Qt Serial Port. Port settings include baud rate, data bits, parity, stop bits, and flow control; available ports can be selected in the settings dialog.
 
-![Sagem Morpho Terminal main window](./images/sagem0.png)
-![Reader controls in Sagem Morpho Terminal](./images/sagem1.png)
-![Morpho protocol communication tools](./images/sagem2.png)
+![Device initialization](./images/sagem0.png)
+![Biometric operations](./images/sagem1.png)
+![Database management and an example data trace](./images/sagem2.png)
 
-# Terminal and device commands
+# Application-specific serial commands
 
-Once connected, the terminal sends and displays data from the serial link. The user interface provides commands for changing device settings and diagnostics, including `SAG00`, `SAG01`, `BDR00`, `BDR01`, and `TRACE`. It also provides `IDF` and `IDC` commands for identification operations and cancellation.
+Once connected, the terminal sends and displays data from the serial link. The `SAG0`, `SAG1`, `BDR0`, `BDR1`, `TRACE`, `IDF`, and `IDC` buttons send application-specific text commands to the serial prompt. These are not commands in the Sagem Morpho protocol.
 
-In addition to text commands, the application implements Morpho binary operations. Modules in `Morpho/` build requests and decode responses for identification, database management, UART configuration, and other functions.
+Separately, the application implements Morpho binary operations. Modules in `Morpho/` build requests and decode responses for identification, database management, UART configuration, and other functions.
 
 # Framing and data validation
 

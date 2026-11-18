@@ -1,19 +1,19 @@
 # SagemMorphoUI
 
-Qt desktop application for connecting to Sagem Morpho fingerprint terminals over a serial port. It combines a terminal view with Morpho protocol commands and response decoding.
+Qt desktop application for connecting to Sagem Morpho fingerprint terminals over a serial port. It combines a custom serial-command prompt with a separate Morpho binary-protocol implementation.
 
 ## Features
 
 - Configure the serial port, baud rate, data bits, parity, stop bits, and flow control.
-- Send terminal commands and Morpho operations for identification, cancellation, and database management.
+- Send application-specific text commands over the serial port, separately from Morpho protocol operations for identification, cancellation, and database management.
 - Build and parse Morpho ILV packets, including CRC validation, byte stuffing, acknowledgements, and response status reporting.
 - Inspect device communication in the built-in terminal.
 
 ## Screenshots
 
-![Sagem Morpho Terminal main window](screenshots/sagem0.png)
-![Sagem Morpho Terminal reader controls](screenshots/sagem1.png)
-![Sagem Morpho Terminal protocol tools](screenshots/sagem2.png)
+![Initialization](screenshots/sagem0.png)
+![Biometric operations](screenshots/sagem1.png)
+![Database management and an example data trace](screenshots/sagem2.png)
 
 ## Build
 

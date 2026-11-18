@@ -1,6 +1,6 @@
 ---
 title: "Sagem Morpho Terminal: komunikace se čtečkou přes sériový port"
-description: "Qt aplikace pro sériovou komunikaci se zařízeními Sagem Morpho: terminál, příkazy, identifikace a zpracování binárního protokolu ILV."
+description: "Qt aplikace s vlastním sériovým promptem, biometrickými a databázovými operacemi a samostatnou implementací binárního protokolu Morpho."
 date: 2026-11-18
 lang: cs
 tags:
@@ -17,15 +17,15 @@ repo: https://github.com/CodElecCz/sagem-morpho-terminal
 
 Aplikace používá Qt Widgets a Qt Serial Port. Nastavení portu zahrnuje rychlost, počet datových bitů, paritu, stop bity a řízení toku; dostupné porty lze vybrat přímo v dialogu.
 
-![Hlavní okno aplikace Sagem Morpho Terminal](./images/sagem0.png)
-![Ovládací prvky čtečky v aplikaci Sagem Morpho Terminal](./images/sagem1.png)
-![Nástroje pro komunikaci s protokolem Morpho](./images/sagem2.png)
+![Inicializace zařízení](./images/sagem0.png)
+![Biometrické operace](./images/sagem1.png)
+![Správa databáze a ukázka záznamu komunikace](./images/sagem2.png)
 
-# Terminál a příkazy zařízení
+# Vlastní sériové příkazy aplikace
 
-Po navázání spojení terminál posílá a zobrazuje data ze sériové linky. Uživatelské rozhraní nabízí příkazy pro změnu nastavení a diagnostiku zařízení, například `SAG00`, `SAG01`, `BDR00`, `BDR01` a `TRACE`. Pro operace identifikace a její zrušení jsou k dispozici také příkazy `IDF` a `IDC`.
+Po navázání spojení terminál posílá a zobrazuje data ze sériové linky. Tlačítka `SAG0`, `SAG1`, `BDR0`, `BDR1`, `TRACE`, `IDF` a `IDC` odesílají vlastní textové příkazy aplikace do sériového promptu. Nejde o příkazy protokolu Sagem Morpho.
 
-Vedle textových příkazů aplikace obsahuje implementaci binárních operací Morpho. Jednotlivé moduly v `Morpho/` sestavují požadavky a dekódují odpovědi pro identifikaci, správu databáze, konfiguraci UART a další funkce.
+Odděleně aplikace implementuje binární operace Morpho. Jednotlivé moduly v `Morpho/` sestavují požadavky a dekódují odpovědi pro identifikaci, správu databáze, konfiguraci UART a další funkce.
 
 # Rámování a kontrola dat
 
