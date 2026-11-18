@@ -11,9 +11,9 @@ Qt desktop application for connecting to Sagem Morpho fingerprint terminals over
 
 ## Screenshots
 
-![SagemMorpho1 GUI](https://codeleccz.github.io/SagemMorphoUI/screenshots/Sagem01.png)
-![SagemMorpho2 GUI](https://codeleccz.github.io/SagemMorphoUI/screenshots/Sagem02.png)
-![SagemMorpho3 GUI](https://codeleccz.github.io/SagemMorphoUI/screenshots/Sagem03.png)
+![Sagem Morpho Terminal main window](screenshots/sagem0.png)
+![Sagem Morpho Terminal reader controls](screenshots/sagem1.png)
+![Sagem Morpho Terminal protocol tools](screenshots/sagem2.png)
 
 ## Build
 
