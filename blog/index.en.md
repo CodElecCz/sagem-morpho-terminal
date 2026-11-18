@@ -18,8 +18,13 @@ repo: https://github.com/CodElecCz/sagem-morpho-terminal
 The application uses Qt Widgets and Qt Serial Port. Port settings include baud rate, data bits, parity, stop bits, and flow control; available ports can be selected in the settings dialog.
 
 ![Device initialization](./images/sagem0.png)
+*1. Initialization*
+
 ![Biometric operations](./images/sagem1.png)
+*2. Biometric*
+
 ![Database management and an example data trace](./images/sagem2.png)
+*3. Database management and an example of a data trace*
 
 # Application-specific serial commands
 

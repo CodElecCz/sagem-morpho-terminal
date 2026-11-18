@@ -12,8 +12,13 @@ Qt desktop application for connecting to Sagem Morpho fingerprint terminals over
 ## Screenshots
 
 ![Initialization](screenshots/sagem0.png)
+*1. Initialization*
+
 ![Biometric operations](screenshots/sagem1.png)
+*2. Biometric*
+
 ![Database management and an example data trace](screenshots/sagem2.png)
+*3. Database management and an example of a data trace*
 
 ## Build
 
