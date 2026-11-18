@@ -17,14 +17,11 @@ repo: https://github.com/CodElecCz/sagem-morpho-terminal
 
 Aplikace používá Qt Widgets a Qt Serial Port. Nastavení portu zahrnuje rychlost, počet datových bitů, paritu, stop bity a řízení toku; dostupné porty lze vybrat přímo v dialogu.
 
-![Inicializace zařízení](./images/sagem0.png)
-*1. Inicializace*
+![Inicializace zařízení](./images/sagem0.png)<br><strong>1. Inicializace</strong>
 
-![Biometrické operace](./images/sagem1.png)
-*2. Biometrie*
+![Biometrické operace](./images/sagem1.png)<br><strong>2. Biometrie</strong>
 
-![Správa databáze a ukázka datového trace](./images/sagem2.png)
-*3. Správa databáze a ukázka datového trace*
+![Správa databáze a ukázka datového trace](./images/sagem2.png)<br><strong>3. Správa databáze a ukázka datového trace</strong>
 
 # Vlastní sériové příkazy aplikace
 
